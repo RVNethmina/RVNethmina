@@ -2,9 +2,8 @@ name: Update Blog Posts
 
 on:
   schedule:
-    # Runs every 6 hours (UTC time)
     - cron: '0 */6 * * *'
-  workflow_dispatch:  # Allows manual triggering
+  workflow_dispatch:
 
 jobs:
   update-blog-posts:
@@ -17,9 +16,9 @@ jobs:
     - name: Update README with blog posts
       uses: gautamkrishnar/blog-post-workflow@v1
       with:
-        feed_list: "https://medium.com/feed/@Ravindu Nethmina" 
-        max_post_count: 5             
-        template: "<li>📅 ${{date}} - <a href=${{link}}>${{title}}</a></li>"
+        feed_list: "https://medium.com/feed/@ravindu.nethmina.work"
+        max_post_count: 5
+        template: "<li>📅 {{date}} - <a href={{link}}>{{title}}</a></li>"
         date_format: "MMMM Do, YYYY"
 
     - name: Commit and push changes
@@ -27,7 +26,7 @@ jobs:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
       run: |
         git config --global user.name "GitHub Actions"
-        git config --global user.email "YOUR_GITHUB_EMAIL"
+        git config --global user.email "ravindu.nethmina.work@gmail.com"
         git add README.md
         git commit -m "📚 Auto-update blog posts" || echo "No changes to commit"
         git push
