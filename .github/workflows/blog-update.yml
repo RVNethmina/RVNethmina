@@ -17,11 +17,10 @@ jobs:
     - name: Update README with blog posts
       uses: gautamkrishnar/blog-post-workflow@v1
       with:
-        feed_list: "YOUR_RSS_FEED_URL"  # Replace with your RSS URL
-        max_post_count: 5               # Number of posts to show
-        # Optional customization:
-        # template: "• [${{title}}](${{link}}) - ${{date}}"
-        # date_format: "MMM D, YYYY"
+        feed_list: "https://medium.com/feed/@Ravindu Nethmina" 
+        max_post_count: 5             
+        template: "<li>📅 ${{date}} - <a href=${{link}}>${{title}}</a></li>"
+        date_format: "MMMM Do, YYYY"
 
     - name: Commit and push changes
       env:
