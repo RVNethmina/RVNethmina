@@ -1,0 +1,34 @@
+name: Update Blog Posts
+
+on:
+  schedule:
+    # Runs every 6 hours (UTC time)
+    - cron: '0 */6 * * *'
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  update-blog-posts:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Update README with blog posts
+      uses: gautamkrishnar/blog-post-workflow@v1
+      with:
+        feed_list: "YOUR_RSS_FEED_URL"  # Replace with your RSS URL
+        max_post_count: 5               # Number of posts to show
+        # Optional customization:
+        # template: "• [${{title}}](${{link}}) - ${{date}}"
+        # date_format: "MMM D, YYYY"
+
+    - name: Commit and push changes
+      env:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "YOUR_GITHUB_EMAIL"
+        git add README.md
+        git commit -m "📚 Auto-update blog posts" || echo "No changes to commit"
+        git push
