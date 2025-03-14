@@ -2,7 +2,7 @@
 <h3 align="center">Undergraduate Student | Software Developer | Tech Enthusiast</h3>
 
 <p align="center">
-  <a href="www.linkedin.com/in/nethminaravindu" target="_blank">
+  <a href="https://linkedin.com/in/nethminaravindu" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
   <a href="https://medium.com/@ravindu.nethmina.work" target="_blank">
