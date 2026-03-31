@@ -28,7 +28,7 @@
 
 - 🎓 Final-year Software Engineering undergraduate at Sri Lanka Institute of Information Technology
 - 💻 Interested in full-stack development, DevOps, cloud-native systems, and software architecture
-- 🌱 Currently learning Spring Boot, Kubernetes, and modern deployment workflows
+- 🌱 Currently learning AWS, Kubernetes, and GitHub deployment workflows
 - ✍️ I write technical articles and share what I learn on Medium
 - 🚀 Passionate about building software that is clean, scalable, and useful
 
@@ -90,6 +90,49 @@
 <table>
   <tr>
     <td width="33%">
+      <h3 align="center">Task Management Microservices System</h3>
+      <p align="center">
+        <a href="https://github.com/CTSE-TaskManagementSystem-2026/frontend-service" target="_blank">
+          <img src="https://img.shields.io/badge/Frontend-181717?style=for-the-badge&logo=github&logoColor=white" />
+        </a>
+        <a href="https://github.com/CTSE-TaskManagementSystem-2026/task-service" target="_blank">
+          <img src="https://img.shields.io/badge/Task_Service-181717?style=for-the-badge&logo=github&logoColor=white" />
+        </a>
+        <a href="https://github.com/CTSE-TaskManagementSystem-2026/projects-service" target="_blank">
+          <img src="https://img.shields.io/badge/Projects_Service-181717?style=for-the-badge&logo=github&logoColor=white" />
+        </a>
+        <a href="https://github.com/CTSE-TaskManagementSystem-2026/auth-service-next" target="_blank">
+          <img src="https://img.shields.io/badge/Auth_Service-181717?style=for-the-badge&logo=github&logoColor=white" />
+        </a>
+      </p>
+      <p>
+        A <strong>microservices-based task management platform</strong> built across four repositories:
+        frontend, task service, projects service, and authentication service. The services include
+        containerization files, GitHub workflows, and service-level API structure, with the auth
+        service supporting JWT authentication, registration, profile handling, and role-based access control.
+      </p>
+      <p>
+        <strong>Tech:</strong> Next.js, TypeScript, Node.js, Docker, OpenAPI, GitHub Actions, MongoDB
+      </p>
+    </td>
+    <td width="33%">
+      <h3 align="center">Code Coach</h3>
+      <p align="center">
+        <a href="https://github.com/R26-SE-036/code-coach" target="_blank">
+          <img src="https://img.shields.io/badge/View%20Repository-181717?style=for-the-badge&logo=github&logoColor=white" />
+        </a>
+      </p>
+      <p>
+        My research-project component in <strong>Code Guru</strong>, designed as a beginner-focused coding
+        support tool. It combines a backend, machine-learning data pipeline, and VS Code extension to detect
+        common Java mistakes and provide real-time, beginner-friendly hints such as off-by-one loops,
+        incorrect conditional operators, and array index misuse.
+      </p>
+      <p>
+        <strong>Tech:</strong> Python, Java, VS Code Extension API, Machine Learning, AST-based analysis
+      </p>
+    </td>
+    <td width="33%">
       <h3 align="center">BrainBoost</h3>
       <p align="center">
         <a href="https://github.com/RVNethmina/BrainBoost" target="_blank">
@@ -97,45 +140,12 @@
         </a>
       </p>
       <p>
-        A mobile brain-training and cognitive assessment application built with
-        <strong>React Native</strong> and <strong>Expo</strong>. It focuses on
-        accessibility, onboarding, game-based interaction, and local result
-        storage using SQLite.
+        A <strong>React Native / Expo mobile application</strong> for brain training and cognitive assessment,
+        aimed at older adults. The project includes onboarding, accessibility-oriented setup, and a working
+        Memory Match prototype with local result storage for early-stage testing and iteration.
       </p>
       <p>
         <strong>Tech:</strong> React Native, Expo, TypeScript, SQLite, NativeWind
-      </p>
-    </td>
-    <td width="33%">
-      <h3 align="center">House Of Salga</h3>
-      <p align="center">
-        <a href="https://github.com/RVNethmina/House_Of_Salga" target="_blank">
-          <img src="https://img.shields.io/badge/View%20Repository-181717?style=for-the-badge&logo=github&logoColor=white" />
-        </a>
-      </p>
-      <p>
-        A modern e-commerce project with separate frontend and backend structure,
-        featuring role-based routes, cart flow, mock-first API development,
-        and scalable frontend organization.
-      </p>
-      <p>
-        <strong>Tech:</strong> React, Vite, Tailwind CSS, Axios, React Router
-      </p>
-    </td>
-    <td width="33%">
-      <h3 align="center">CTSE-Lab06-Kafka</h3>
-      <p align="center">
-        <a href="https://github.com/RVNethmina/CTSE-Lab06-Kafka" target="_blank">
-          <img src="https://img.shields.io/badge/View%20Repository-181717?style=for-the-badge&logo=github&logoColor=white" />
-        </a>
-      </p>
-      <p>
-        A microservices project structured around an API Gateway and multiple
-        backend services, representing my interest in distributed systems,
-        service communication, and containerized architecture.
-      </p>
-      <p>
-        <strong>Tech:</strong> Java, API Gateway, Microservices, Docker Compose
       </p>
     </td>
   </tr>
